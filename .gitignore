@@ -11,3 +11,6 @@ secrets.json
 
 # Local datasets (not for version control)
 data/
+
+# Generated pipeline outputs
+output/
