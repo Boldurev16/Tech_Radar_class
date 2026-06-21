@@ -1,0 +1,13 @@
+# Secrets and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+credentials.json
+secrets.json
+**/secrets/
+
+# Local datasets (not for version control)
+data/

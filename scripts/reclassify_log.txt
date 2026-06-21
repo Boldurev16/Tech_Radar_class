@@ -1,0 +1,31 @@
+﻿python : Traceback (most recent call last):
+C:\Users\PC\AppData\Local\Temp\ps-script-96b6492a-5d11-47b6-88af-395c55d66576.ps1:85 знак:36
++ ... nt\Tech_Radar_class"; python scripts/reclassify_batch.py 2>&1 | Out-F ...
++                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "C:\AI Agent\Tech_Radar_class\scripts\reclassify_batch.py", line 47, in <module>
+    main()
+  File "C:\AI Agent\Tech_Radar_class\scripts\reclassify_batch.py", line 23, in main
+    export_df["block"] = export_df["name"].map(full.set_index("name")["block"])
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\series.py", line 4675, in map
+    new_values = self._map_values(func, na_action=na_action)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\base.py", line 1020, in _map_
+values
+    return arr.map(mapper, na_action=na_action)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\arrays\base.py", line 2744, i
+n map
+    return map_array(self, mapper, na_action=na_action)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\algorithms.py", line 1699, in
+ map_array
+    indexer = mapper.index.get_indexer(arr)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\indexes\base.py", line 3728, 
+in get_indexer
+    raise InvalidIndexError(self._requires_unique_msg)
+pandas.errors.InvalidIndexError: Reindexing only valid with uniquely valued Index objects

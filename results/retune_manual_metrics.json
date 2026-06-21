@@ -1,0 +1,43 @@
+{
+  "optimized_weight_rule": 0.2,
+  "optimized_weight_rule_quadrant": 0.1,
+  "optimized_weight_rule_block": 0.3,
+  "optimized_quadrant_macro_f1": 0.7651,
+  "optimized_block_macro_f1": 0.4879,
+  "optimized_macro_f1_avg": 0.6265,
+  "validation_joint_accuracy": 0.7198,
+  "weight_grid": [
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9
+  ],
+  "source": "C:\\AI Agent\\Tech_Radar_class\\data\\source_16.06.xlsx",
+  "train_size": 1647,
+  "val_size": 389,
+  "test_size": 487,
+  "dataset_size": 2523,
+  "baseline_test": {
+    "quadrant_macro_f1": 0.7597,
+    "block_macro_f1": 0.6568,
+    "joint_accuracy": 0.7741
+  },
+  "after_prototypes_test": {
+    "quadrant_macro_f1": 0.659,
+    "block_macro_f1": 0.521,
+    "joint_accuracy": 0.6715
+  },
+  "final_test": {
+    "quadrant_macro_f1": 0.6841,
+    "block_macro_f1": 0.521,
+    "joint_accuracy": 0.6756,
+    "quadrant_accuracy": 0.77,
+    "block_accuracy": 0.8706
+  },
+  "notes": "Retuned on source_16.06.xlsx manual markup; prototypes rebuilt on train split; weights optimized on inner val split"
+}
